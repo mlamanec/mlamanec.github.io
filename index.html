@@ -39,6 +39,12 @@
     .contact-card{background:#fff;border:1px solid var(--line);border-radius:.75rem;padding:1rem;box-shadow:var(--shadow)}
     .footer{padding:2rem 0;border-top:1px solid var(--line);color:var(--muted);background:#fbfcfd}
     .footer p{margin:0;font-size:.95rem}
+    /* top menu */
+.menu { display:flex; gap:.75rem; align-items:center; margin:-3.5rem 0 1rem; }
+.menu a { text-decoration:none; color:var(--ink); font-weight:600; padding:.4rem .7rem; border-radius:.5rem; }
+.menu a:hover { background:#ecfeff; color:var(--brand); }
+.menu .spacer { flex:1; }
+
   </style>
   <script type="application/ld+json">
   {
@@ -60,6 +66,12 @@
 </head>
 <body>
   <header class="hero">
+    <nav class="menu">
+  <a href="index.html">Home</a>
+  <a href="Lamanec_CV.pdf" download>CV</a>
+  <a href="publications.html">Publications</a>
+  <span class="spacer"></span>
+</nav>
     <div class="container">
       <h1>Maximilián Lamanec, Ph.D.</h1>
       <p class="tagline">Computational chemist • Electronic structure & non-covalent interactions</p>
