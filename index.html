@@ -15,21 +15,31 @@
       --shadow: 0 10px 30px rgba(2,8,23,.12);
     }
     *{box-sizing:border-box} html,body{margin:0;padding:0}
-    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,"Apple Color Emoji","Segoe UI Emoji";
-         line-height:1.65; color:var(--ink);
-         background:linear-gradient(180deg,#ecfeff 0%, #f8fafc 100%)}
+    body{
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,"Apple Color Emoji","Segoe UI Emoji";
+      line-height:1.65; color:var(--ink);
+      background:linear-gradient(180deg,#ecfeff 0%, #f8fafc 100%)
+    }
     .container{max-width:980px;margin:0 auto;padding:0 1.25rem}
-    .hero{background: radial-gradient(1000px 400px at 10% 0%, rgba(20,184,166,.25), transparent 60%),
-                     linear-gradient(180deg,#e6fffb 0%, #ffffff 60%);
-           padding:6rem 0 3rem; border-bottom:1px solid var(--line)}
+    .hero{
+      background: radial-gradient(1000px 400px at 10% 0%, rgba(20,184,166,.25), transparent 60%),
+                  linear-gradient(180deg,#e6fffb 0%, #ffffff 60%);
+      padding:6rem 0 3rem; border-bottom:1px solid var(--line)
+    }
     .hero h1{font-size:clamp(2rem,3.5vw,3rem);margin:0 0 .25rem;letter-spacing:-.02em}
     .tagline{margin:0 0 1rem;color:var(--brand);font-weight:600}
     .badges{list-style:none;padding:0;margin:0 0 1rem;display:flex;gap:.5rem;flex-wrap:wrap}
     .badges li{background:#ecfeff;color:var(--brand);border:1px solid #99f6e4;padding:.25rem .6rem;border-radius:999px;font-size:.875rem}
     .socials{display:flex;gap:.75rem;align-items:center;margin-bottom:1rem}
-    .socials a{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:999px;background:#fff;color:var(--brand);border:1px solid #d1fae5;box-shadow:var(--shadow);text-decoration:none}
+    .socials a{
+      display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:999px;
+      background:#fff;color:var(--brand);border:1px solid #d1fae5;box-shadow:var(--shadow);text-decoration:none
+    }
     .socials a svg{width:22px;height:22px}
-    .cta{display:inline-block;background:linear-gradient(90deg,var(--brand),var(--brand2));color:#fff;text-decoration:none;font-weight:600;letter-spacing:.2px;padding:.6rem 1rem;border-radius:.75rem;box-shadow:var(--shadow)}
+    .cta{
+      display:inline-block;background:linear-gradient(90deg,var(--brand),var(--brand2));color:#fff;text-decoration:none;
+      font-weight:600;letter-spacing:.2px;padding:.6rem 1rem;border-radius:.75rem;box-shadow:var(--shadow)
+    }
     main{padding:2rem 0 4rem}
     h2{font-size:clamp(1.25rem,2.4vw,1.75rem);margin:2rem 0 .75rem;letter-spacing:-.01em}
     p{margin:.5rem 0 1rem}
@@ -40,11 +50,10 @@
     .footer{padding:2rem 0;border-top:1px solid var(--line);color:var(--muted);background:#fbfcfd}
     .footer p{margin:0;font-size:.95rem}
     /* top menu */
-.menu { display:flex; gap:.75rem; align-items:center; margin:-3.5rem 0 1rem; }
-.menu a { text-decoration:none; color:var(--ink); font-weight:600; padding:.4rem .7rem; border-radius:.5rem; }
-.menu a:hover { background:#ecfeff; color:var(--brand); }
-.menu .spacer { flex:1; }
-
+    .menu{display:flex;gap:.75rem;align-items:center;margin:0 0 1rem}
+    .menu a{text-decoration:none;color:var(--ink);font-weight:600;padding:.4rem .7rem;border-radius:.5rem}
+    .menu a:hover{background:#ecfeff;color:var(--brand)}
+    .menu .spacer{flex:1}
   </style>
   <script type="application/ld+json">
   {
@@ -66,13 +75,14 @@
 </head>
 <body>
   <header class="hero">
-    <nav class="menu">
-  <a href="index.html">Home</a>
-  <a href="Lamanec_CV.pdf" download>CV</a>
-  <a href="publications.html">Publications</a>
-  <span class="spacer"></span>
-</nav>
     <div class="container">
+      <nav class="menu" role="navigation" aria-label="Main">
+        <a href="/">Home</a>
+        <a href="/Lamanec_CV.pdf" download>CV</a>
+        <a href="/publications.html">Publications</a>
+        <span class="spacer"></span>
+      </nav>
+
       <h1>Maximilián Lamanec, Ph.D.</h1>
       <p class="tagline">Computational chemist • Electronic structure & non-covalent interactions</p>
       <ul class="badges">
